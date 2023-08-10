@@ -13,12 +13,12 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/recipe-book" element={<Header/>}/>
-        <Route path="/recipe/:recipeid" element={<Recipe/>}/>
-        <Route path="/popular" element={<Popular/>}/>
-        <Route path="/healthy" element={<Healthy/>}/>
-        <Route path="/scores" element={<Scores/>}/>
-        <Route path="/search/:searchid" element={<Search/>}/>
+        <Route path="recipe-book" element={<Header/>}/>
+        <Route path="recipe/:recipeid" element={<Recipe/>}/>
+        <Route path="popular" element={<Popular/>}/>
+        <Route path="healthy" element={<Healthy/>}/>
+        <Route path="scores" element={<Scores/>}/>
+        <Route path="search/:searchid" element={<Search/>}/>
       </Routes>
     </BrowserRouter>
   )
