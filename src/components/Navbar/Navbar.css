@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  --base-blue: #2980b9;
+  --dark-blue: #2c3e50;
+  --white-text: #ecf0f1;
+  --gray-accent: #eaeaeb;
+
+  --light-blue-accent: #3BBA9C;
+  --dark-background: #2E3047;
+  --light-background-shade-1: #43455C;
+  --light-background-shade-2: #3C3F58;
+  --light-background-shade-3: #707793;
+
+  --dark-blue-background: #305F72;
+  --light-blue-accent: #568EA6;
+  --yellow-accent: #F1D1B5;
+  --orange-accent: #F0B7A4;
+  --red-accent: #F18C8E;
+}
+
+  .wrapper {
+    height: 300px;
+    background: var(--dark-blue);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .container {
+    position: absolute;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width: 375px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      top: 0;
+      margin-top: 50px;
+      height: auto;
+    }
+
+    .search {
+      width: 200px;
+      justify-content: center;
+      width: auto;
+    }
+    
+    .search > * {
+      margin-top: 10px;
+    }
+
+    .options_wrapper {
+      width: 90%;
+    }
+  }
+
+  @media screen and (min-width: 375px) and (max-width: 768px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      top: 0;
+      margin-top: 50px;
+      height: auto;
+    }
+
+    .search {
+      width: 200px;
+      justify-content: center;
+      width: auto;
+    }
+    
+    .search > * {
+      margin-top: 10px;
+    }
+
+    .options_wrapper {
+      width: 70%;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+      top: 0;
+      margin-top: 50px;
+      height: auto;
+      width: 70%;
+    }
+
+    .search {
+      width: 400px;
+    }
+    
+    .search > * {
+      margin-top: 10px;
+    }
+
+    .options_wrapper {
+      width: 70%;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .container {
+      width: 70%;
+    }
+    
+    .options_wrapper {
+      width: 70%;
+    }
+    
+    .search {
+      width: 400px;
+    }
+  }
+  
+  .container > a {
+    text-decoration: none;
+    color: var(--white-text);
+  }
+  
+  .container > a > h1 {
+    position: relative;
+    font-size: 2.5rem;
+    color: var(--white-text);
+  }
+  
+  .search {
+    display: flex;
+    justify-content: end;
+  }
+  
+  .search > input {
+    width: 100%;
+    height: 40px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+  }
+
+  .search > input:focus {
+    outline: none;
+  }
+  
+  .search > a > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: var(--gray-accent);
+    transition: all 0.1s ease-in;
+  }
+  
+  .search > a > button > ion-icon {
+    font-size: 20px;
+  }
+  
+  .search > a > button:hover {
+    background: var(--dark-blue);
+    color: var(--white-text);
+  }
+
+  .search > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 40px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: var(--gray-accent);
+    transition: all 0.1s ease-in;
+    z-index: 1;
+  }
+  
+  .search > button > ion-icon {
+    font-size: 20px;
+  }
+  
+  .search > button:hover {
+    background: var(--dark-blue);
+    color: var(--white-text);
+  }
+  
+  .options_wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    background: var(--dark-blue-background);
+    border-radius: 20px;
+    padding: 5px;
+  }
+  
+  .options_wrapper > a {
+    text-decoration: none;
+    display: contents;
+  }
+  
+  .options_wrapper > a > div {
+    width: 90px;
+    margin: 0px 4%;
+    color: var(--white-text);
+    padding: 5px;
+    border-radius: 10px;
+    border-left: 2px solid var(--dark-blue);
+    border-right: 2px solid var(--dark-blue);
+    transition: all 0.1s ease-out;
+    cursor: default;
+  }
+  
+  .options_wrapper > a > div > ion-icon {
+    font-size: 1.5rem;
+  }
+  
+  .options_wrapper > a > div:hover {
+    color: #3BBA9C;
+  }

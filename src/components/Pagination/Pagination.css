@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+#root {
+    --base-blue: #2980b9;
+    --dark-blue: #2c3e50;
+    --white-text: #ecf0f1;
+    --gray-accent: #eaeaeb;
+}
+
+.footer_pages {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page_numbers_container {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px 10px;
+}
+
+.page_number_box {
+    background: var(--gray-accent);
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    transition: all 0.1s ease-out;
+}
+
+.page_number_box:hover {
+    background: var(--dark-blue);
+    color: var(--white-text);
+}

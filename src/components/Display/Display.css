@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  #root {
+    --base-blue: #2980b9;
+    --dark-blue: #2c3e50;
+    --white-text: #ecf0f1;
+    --gray-accent: #eaeaeb;
+  }
+
+  .recipe_wrapper {
+    width: 100%;
+  }
+
+  .grid_recipe_wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    gap: 30px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .grid_recipe_wrapper {
+      width: 90%;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .grid_recipe_wrapper {
+      width: 70%;
+    }
+  }
