@@ -77,7 +77,7 @@ export default function Recipe() {
         <div className="left_container">
           <div className="search_container">
             <div>
-            <Link to="/">
+            <Link to="/recipe-book">
               <h1>Recipe Book</h1>
             </Link>
             <div className="search_wrapper">
