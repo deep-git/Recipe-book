@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <div className="wrapper">
       <div className="container">
-                    <Link to="recipe-book"><h1>Recipe Book</h1></Link>
+                    <Link to="/recipe-book"><h1>Recipe Book</h1></Link>
                     <div className="search">
                         <input type="text" value={name} onChange={(e) => setName(e.target.value)} className="recipe_search" placeholder="Search recipe" />
                         {name.length != 0 ? (
@@ -21,19 +21,19 @@ export default function Navbar() {
                     </div>
                 </div>
                 <div className="options_wrapper">
-                    <Link to="popular">
+                    <Link to="/popular">
                     <div className="search_popularity">
                         <ion-icon name="fast-food-outline"></ion-icon>
                         <p>Popular</p>
                     </div>
                     </Link>
-                    <Link to="healthy">
+                    <Link to="/healthy">
                     <div className="search_healthy">
                         <ion-icon name="medkit-outline"></ion-icon>
                         <p>Healthy</p>
                     </div>
                     </Link>
-                    <Link to="scores">
+                    <Link to="/scores">
                     <div className="search_score">
                         <ion-icon name="star-outline"></ion-icon>
                         <p>Scores</p>
