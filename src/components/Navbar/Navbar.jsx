@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <div className="wrapper">
       <div className="container">
-                    <Link to="/"><h1>Recipe Book</h1></Link>
+                    <Link to="/recipe-book"><h1>Recipe Book</h1></Link>
                     <div className="search">
                         <input type="text" value={name} onChange={(e) => setName(e.target.value)} className="recipe_search" placeholder="Search recipe" />
                         {name.length != 0 ? (
