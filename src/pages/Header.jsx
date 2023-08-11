@@ -13,7 +13,7 @@ export default function Header() {
 
     useEffect(() => {
         try {
-            fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=c688beef0ebc4d779243108b8bbda496&query=${""}&sort=random&addRecipeInformation=true&number=100&addRecipeNutrition=true`)
+            fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&query=${""}&sort=random&addRecipeInformation=true&number=100&addRecipeNutrition=true`)
             .then(res => res.json())
             .then(data => {
             if (!data.errors) {
