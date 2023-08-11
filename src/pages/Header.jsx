@@ -9,9 +9,11 @@ import Pagination from "../components/Pagination/Pagination";
 export default function Header() {
     const [recipe, setRecipe] = useState([]);
 
+    const apiKey = import.meta.env.VITE_API_KEY;
+
     useEffect(() => {
         try {
-            fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${import.meta.env.VITE_API_KEY}&query=${""}&sort=random&addRecipeInformation=true&number=100&addRecipeNutrition=true`)
+            fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=${apiKey}&query=${""}&sort=random&addRecipeInformation=true&number=100&addRecipeNutrition=true`)
             .then(res => res.json())
             .then(data => {
             if (!data.errors) {
