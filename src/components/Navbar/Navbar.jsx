@@ -21,19 +21,19 @@ export default function Navbar() {
                     </div>
                 </div>
                 <div className="options_wrapper">
-                    <Link to="/recipe-book/popular">
+                    <Link to="/popular">
                     <div className="search_popularity">
                         <ion-icon name="fast-food-outline"></ion-icon>
                         <p>Popular</p>
                     </div>
                     </Link>
-                    <Link to="/recipe-book/healthy">
+                    <Link to="/healthy">
                     <div className="search_healthy">
                         <ion-icon name="medkit-outline"></ion-icon>
                         <p>Healthy</p>
                     </div>
                     </Link>
-                    <Link to="/recipe-book/scores">
+                    <Link to="/scores">
                     <div className="search_score">
                         <ion-icon name="star-outline"></ion-icon>
                         <p>Scores</p>

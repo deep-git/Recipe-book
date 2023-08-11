@@ -14,11 +14,11 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/recipe-book/" element={<Header/>}/>
-        <Route path="/recipe-book/recipe/:recipeid" element={<Recipe/>}/>
-        <Route path="/recipe-book/popular" element={<Popular/>}/>
-        <Route path="/recipe-book/healthy" element={<Healthy/>}/>
-        <Route path="/recipe-book/scores" element={<Scores/>}/>
-        <Route path="/recipe-book/search/:searchid" element={<Search/>}/>
+        <Route path="/recipe/:recipeid" element={<Recipe/>}/>
+        <Route path="/popular" element={<Popular/>}/>
+        <Route path="/healthy" element={<Healthy/>}/>
+        <Route path="/scores" element={<Scores/>}/>
+        <Route path="/search/:searchid" element={<Search/>}/>
       </Routes>
     </BrowserRouter>
   )
