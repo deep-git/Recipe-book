@@ -13,7 +13,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="../recipe-book" element={<Header/>}/>
+        <Route path="/" element={<Header/>}/>
         <Route path="/recipe/:recipeid" element={<Recipe/>}/>
         <Route path="/popular" element={<Popular/>}/>
         <Route path="/healthy" element={<Healthy/>}/>
